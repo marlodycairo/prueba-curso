@@ -9,5 +9,6 @@ namespace GitDemo
     public class Products
     {
         public string Nombre { get; set; }
+        public int Cantidad { get; set; }
     }
 }

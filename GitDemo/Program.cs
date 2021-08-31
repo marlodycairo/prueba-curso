@@ -6,7 +6,10 @@ namespace GitDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Products products = new Products();
+
+            products.Nombre = "Atun en aceite.";
+            products.Cantidad = 3;
         }
     }
 
