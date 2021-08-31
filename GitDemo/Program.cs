@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace GitDemo
 {
@@ -8,8 +9,14 @@ namespace GitDemo
         {
             Products products = new Products();
 
-            products.Nombre = "Atun en aceite.";
-            products.Cantidad = 3;
+            List<Products> lstProducts = new List<Products>();
+
+            lstProducts.Add(new Products() { Nombre = "Atun en aceite.", Cantidad = 3 });
+            lstProducts.Add(new Products() { Nombre = "Cazuela de mariscos.", Cantidad = 2 });
+            lstProducts.Add(new Products() { Nombre = "Salmón.", Cantidad = 2 });
+
+
+            Console.WriteLine(products);
         }
     }
 
