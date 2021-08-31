@@ -9,6 +9,7 @@ namespace GitDemo
         {
             Products products = new Products();
 
+<<<<<<< HEAD
             products.Nombre = "Atun en aceite.";
             products.Cantidad = 3;
 
@@ -17,6 +18,16 @@ namespace GitDemo
             var newperson = person.CrearPersona(person);
 
             Console.WriteLine(newperson);
+=======
+            List<Products> lstProducts = new List<Products>();
+
+            lstProducts.Add(new Products() { Nombre = "Atun en aceite.", Cantidad = 3 });
+            lstProducts.Add(new Products() { Nombre = "Cazuela de mariscos.", Cantidad = 2 });
+            lstProducts.Add(new Products() { Nombre = "Salmón.", Cantidad = 2 });
+
+
+            Console.WriteLine(products);
+>>>>>>> nuevaRutaLogin
         }
     }
 
